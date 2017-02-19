@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 
 <body>
@@ -23,16 +24,24 @@
           Travlr
         </span>
       </div>
-      <div class = "inp-container">
-        <input id = "usr">
-      </div>
-      <div class = "inp-container">
-        <input id = "pwd">
+      <div ng-app="" ng-init="username='username'; password= 'password'" class = "inp-container">
+        <div class = "inp-container">
+          <input id = "usr" ng-model="username">
+        </div>
+        <div class = "inp-container">
+          <input id = "pwd" ng-model="password">
+        </div>
+        <div>
+          <button type="submit" class="inp-container">Sign In</button>
+        </div>
       </div>
 
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-        Open Modal
+
+      <div class="inp-container">
+      <button type="button" class="userId" data-toggle="modal" data-target="#myModal">
+        Not a member? Sign up now!
       </button>
+      </div>
       <!-- Modal -->
       <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -40,15 +49,21 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
+              <h4 class="modal-title">Create new account</h4>
             </div>
+
             <div class="modal-body">
-              <form id="newUser">
-                <input type="text" id="usr"/>
-                <input type="text" id="pwd"/>
-              <!-- <p>Some text in the modal.</p> -->
+              <form id=newUser>
+                <div class = "inp-container">
+                  <input type="text" class="new-cnt" id="usr"/>
+                </div>
+                <div class = "inp-container">
+                  <input type="text" class="new-cnt" id="pwd"/>
+                </div>
+                <!-- <p>Some text in the modal.</p> -->
             </form>
             </div>
+
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>

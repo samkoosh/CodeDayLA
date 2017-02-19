@@ -39,7 +39,13 @@ button{
   width: 20vw;
   border:0;
   border-radius:1vh;
+  text-align:center;
 }
+
+button:focus{
+  outline:0;
+}
+
 input{
   color:white;
   font-family: 'Comfortaa', cursive;
@@ -49,13 +55,63 @@ input{
   width: 20vw;
   border:0;
   border-radius:1vh;
+  padding-left: 10px;
 }
 input:focus {
   background-color:rgba(0, 0, 0, 0.65);
   outline:none;
 }
 
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 0px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
 
+button[class="userId"]{
+  color:white;
+  font-family: 'Comfortaa', cursive;
+  margin: 0 auto;
+  background-color:transparent;
+  height: 2vh;
+  width: 20vw;
+  border:none;
+  border-radius:none;
+
+}
+
+.new-cnt{
+  margin: 1vh auto 1vh auto;
+  text-align:left;
+  left: 50%;
+  right: 50%;
+}
+
+.newUser {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* The Close Button */
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline:0;
+}
 
 /*
 font-family: 'Pacifico', cursive;
