@@ -1,102 +1,129 @@
-#grad {
-  height: 100vh;
-  width: 100vw;
-  background: rgb(189, 32, 49); /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0)); /* Standard syntax */
-}
-#travlr-container{
-  font-size: 9vh;
-  font-family: 'Pacifico', cursive;
-  /*bottom:0;*/
-  color: white;
-  margin: 0 auto;
-  text-align: center;
-}
-#horsepic{
-  height:9vh;
-  padding-bottom:1vh;
-}
-#elements-container{
-  padding-top: 25vh;
-}
-.inp-container{
-  margin: 1vh auto 1vh auto;
-  text-align: center;
-}
-.button-container{
-  margin: 3vh auto 1vh auto;
-  text-align: center;
-}
-button{
-  color:white;
-  font-family: 'Comfortaa', cursive;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 5vh;
-  width: 20vw;
-  border:0;
-  border-radius:1vh;
-  text-align:center;
+body {
+    height: 100vh;
+    background: rgb(189, 32, 49);
+    background: -webkit-linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0));
+    background: -o-linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0));
+    background: -moz-linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0));
+    background: linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0));
 }
 
-button:focus{
-  outline:0;
+#logo-container {
+    display: flex;
+    color:white;
 }
 
-input{
-  color:white;
-  font-family: 'Comfortaa', cursive;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 5vh;
-  width: 20vw;
-  border:0;
-  border-radius:1vh;
-  padding-left: 10px;
+#logo-text {
+    padding-left: 2vw;
+    display: flex;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 9vh;
+    text-shadow: 0 0 5vh black;
+    margin:0 0 0 auto;
 }
+
+#logo-pic-container {
+    display: flex;
+    align-items: center;
+    margin:0 auto 0 0;
+}
+
+#logo-pic {
+    height: 9vh;
+    padding-left: 1%;
+    display: flex;
+    align-items: center;
+    -webkit-filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+}
+
+
+#elements-container {
+    padding-top: 25vh;
+}
+
+.inp-container {
+    margin: 1vh auto 1vh auto;
+    text-align: center;
+}
+
+.button-container {
+    margin: 3vh auto 1vh auto;
+    text-align: center;
+}
+
+button {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 5vh;
+    width: 20vw;
+    border: 0;
+    border-radius: 1vh;
+    text-align: center;
+}
+
+button:focus {
+    outline: 0;
+}
+
+input {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 5vh;
+    width: 20vw;
+    border: 0;
+    border-radius: 1vh;
+    padding-left: 10px;
+}
+
 input:focus {
-  background-color:rgba(0, 0, 0, 0.65);
-  outline:none;
+    background-color: rgba(0, 0, 0, 0.65);
+    outline: none;
 }
+
 
 /* Modal Content/Box */
+
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 0px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
+    /* Could be more or less, depending on screen size */
 }
 
-button[class="userId"]{
-  color:white;
-  font-family: 'Comfortaa', cursive;
-  margin: 0 auto;
-  background-color:transparent;
-  height: 2vh;
-  width: 20vw;
-  border:none;
-  border-radius:none;
-
+button[class="userId"] {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    margin: 0 auto;
+    background-color: transparent;
+    height: 2vh;
+    width: 20vw;
+    border: none;
+    border-radius: none;
 }
 
-.new-cnt{
-  margin: 1vh auto 1vh auto;
-  text-align:left;
-  left: 50%;
-  right: 50%;
+.new-cnt {
+    margin: 1vh auto 1vh auto;
+    text-align: left;
+    left: 50%;
+    right: 50%;
 }
 
 .newUser {
-  margin: 0 auto;
-  text-align: center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
 /* The Close Button */
+
 .close {
     color: red;
     float: right;
@@ -105,13 +132,13 @@ button[class="userId"]{
     text-align: right;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-    outline:0;
+    outline: 0;
 }
+
 
 /*
 font-family: 'Pacifico', cursive;

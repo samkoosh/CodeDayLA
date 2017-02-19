@@ -14,67 +14,59 @@
 </head>
 
 <body>
-  <div id="grad">
-    <div id = "elements-container">
-      <div id="travlr-container">
-        <!-- <span id="travlr-logo">
-          <img id = "horsepic" src="assets/traveler.png" alt="USC's Mascot">
-        </span> -->
-        <span id="travlr-title">
-          Travlr
-        </span>
-      </div>
-      <div ng-app="" ng-init="username='username'; password= 'password'" class = "inp-container">
-        <div class = "inp-container">
-          <input id = "usr" ng-model="username">
-        </div>
-        <div class = "inp-container">
-          <input id = "pwd" ng-model="password">
-        </div>
-        <div>
-          <button type="submit" class="inp-container">Sign In</button>
-        </div>
-      </div>
-
-
-      <div class="inp-container">
-      <button type="button" class="userId" data-toggle="modal" data-target="#myModal">
-        Not a member? Sign up now!
-      </button>
-      </div>
-      <!-- Modal -->
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Create new account</h4>
-            </div>
-
-            <div class="modal-body">
-              <form id=newUser>
-                <div class = "inp-container">
-                  <input type="text" class="new-cnt" id="usr"/>
-                </div>
-                <div class = "inp-container">
-                  <input type="text" class="new-cnt" id="pwd"/>
-                </div>
-                <!-- <p>Some text in the modal.</p> -->
-            </form>
-            </div>
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- Modal Content end -->
-        </div>
-      </div>
-      <!-- Modal End -->
-
+  <div id = "elements-container">
+    <div id = "logo-container">
+      <span id = "logo-text">
+        Travlr
+      </span>
+      <span id = "logo-pic-container">
+        <img id = "logo-pic" src="assets/traveler.png" alt="horsey">
+      </span>
     </div>
+    <div ng-app="" ng-init="username='username'; password= 'password'" class = "inp-container">
+      <div class = "inp-container">
+        <input id = "usr" ng-model="username">
+      </div>
+      <div class = "inp-container">
+        <input id = "pwd" ng-model="password">
+      </div>
+      <div>
+        <button type="submit" class="inp-container">Sign In</button>
+      </div>
+    </div>
+    <div class="inp-container">
+    <button type="button" class="userId" data-toggle="modal" data-target="#myModal">
+      Not a member? Sign up now!
+    </button>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Create new account</h4>
+          </div>
+          <div class="modal-body">
+            <form id=newUser>
+              <div class = "inp-container">
+                <input type="text" class="new-cnt" id="usr"/>
+              </div>
+              <div class = "inp-container">
+                <input type="text" class="new-cnt" id="pwd"/>
+              </div>
+              <!-- <p>Some text in the modal.</p> -->
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        <!-- Modal Content end -->
+      </div>
+    </div>
+    <!-- Modal End -->
   </div>
-
 </body>
 </html>

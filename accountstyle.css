@@ -173,10 +173,6 @@ form {
     color: white;
     height: 5vh;
     padding: 10px;
-    /*border:10px;*/
-    /*-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;*/
 }
 
 .form-item:focus {
