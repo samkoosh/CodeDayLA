@@ -14,7 +14,7 @@ $(function() {$("#tripInfo").submit(
       <span class = "trip-part">${oText2}</span>
       <span class = "trip-part">${oText3 + " - " + oText4}</span>
       <span class = "trip-part">${oText5}</span>
-      <button class = "trip-part">Check Matches!</button>
+      <button class = "trip-part" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Check Matches!</button>
     </div>`;
     console.log(newElement);
     $("#trips-container").append(newElement);

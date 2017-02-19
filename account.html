@@ -15,10 +15,14 @@
 </head>
 <body>
   <div id = "top-bar">
-    <span id = "logo-text" class = "hvr hvr-grow">
-      Travlr
+    <span class = "hvr hvr-grow" id = "logo-container">
+      <span id = "logo-text">
+        Travlr
+      </span>
+      <span id = "logo-pic-container">
+        <img id = "logo-pic" src="assets/traveler.png" alt="horsey">
+      </span>
     </span>
-    <img id = "logo-pic" src="assets/traveler.png" alt="horsey">
     <div id = "account-meta">
       <span class = "username-container">
         Max C.L. Nikias
@@ -41,7 +45,7 @@
         <span class = "trip-part">LAX</span>
         <span class = "trip-part">2:00am - 3:00pm</span>
         <span class = "trip-part">1/29/17</span>
-        <button class = "trip-part">Check Matches!</button>
+        <button class = "trip-part" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Check Matches!</button>
       </div>
       <div class = "trip">
         <span class = "trip-part">LAX</span>
@@ -54,27 +58,51 @@
     <div class = "form-container">
       <form id="tripInfo">
         <span class = "form-item-container" id = "to">
-          <input class = "form-item hvr hvr-grow not-time" type="text" name="toLocal" value = ""/>
+          <input class = "form-item not-time" value = "Where from?" type="text" name="toLocal" value = ""/>
         </span>
         <span class = "form-item-container" id = "from">
-          <input class = "form-item hvr hvr-grow not-time" type="text" name="fromLocal"/>
+          <input class = "form-item not-time" value = "Where to?" type="text" name="fromLocal"/>
         </span>
         <span class = "form-item-container">
           <span id = "earliest-depart">
-            <input class = "form-item hvr hvr-grow time" type="text" name="earlyTime"/>
+            <input class = "form-item time" value = "Earliest" type="text" name="earlyTime"/>
           </span>
           &nbsp;-&nbsp;
           <span id = "lastest-depart">
-            <input class = "form-item hvr hvr-grow time" type="text" name="lateTime"/>
+            <input class = "form-item time" value = "Latest" type="text" name="lateTime"/>
           </span>
         </span>
         <span class = "form-item-container" id = "date">
-          <input class = "form-item hvr hvr-grow not-time" type = "text" name = "date" />
+          <input class = "form-item not-time" value = "mm/dd/yy" type = "text" name = "date" />
         </span>
         <span class = "form-item-container" id = "submit">
-          <input class = "form-item hvr hvr-grownot-time" type = "submit" value="Add Trip"/>
+          <input class = "form-item" type = "submit" value="Add Trip"/>
         </span>
       </form>
     </div>
   </div>
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <form id="newUser">
+            <input type="text" id="usr"/>
+            <input type="text" id="pwd"/>
+          <!-- <p>Some text in the modal.</p> -->
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      <!-- Modal Content end -->
+    </div>
+  </div>
+  <!-- Modal End -->
 </body>

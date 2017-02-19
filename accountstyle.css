@@ -22,9 +22,12 @@ body {
     color: white;
 }
 
+#logo-container {
+    display: flex;
+}
+
 #logo-text {
     padding-left: 2vw;
-    padding-right: -1;
     display: flex;
     align-items: center;
     font-family: 'Pacifico', cursive;
@@ -32,9 +35,14 @@ body {
     text-shadow: 0 0 5vh black;
 }
 
+#logo-pic-container {
+    display: flex;
+    align-items: center;
+}
+
 #logo-pic {
     height: 5vh;
-    padding-left: 2vw;
+    padding-left: 1%;
     display: flex;
     align-items: center;
     -webkit-filter: drop-shadow(0 0 5px rgb(0, 0, 0));
@@ -131,46 +139,65 @@ button[class="trip-part"] {
 }
 
 button[class="trip-part"]:hover {
-    color: aqua;
+    font-weight: 900;
+    text-shadow: 0 0 1vh white;
+}
+
+button:focus {
+    outline: 0;
 }
 
 form {
-  display: flex;
-  align-content: center;
-  background-color: rgba(0, 0, 0, 0.1);
-  height: 5vh;
-  justify-content: space-around;
+    display: flex;
+    align-content: center;
+    height: 5vh;
+    justify-content: space-around;
 }
 
 .form-item-container {
-  font-family: 'Comfortaa', cursive;
-  color:white;
-  font-size: 3vh;
-  width: 20%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 2vh;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
 }
 
-.form-item{
-  background-color:rgba(0, 0, 0, 0.5);
-  border: none;
-  border-radius: 1vh;
-  color:white;
-  height: 5vh;
+.form-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 1vh;
+    color: white;
+    height: 5vh;
+    padding: 10px;
+    /*border:10px;*/
+    /*-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;*/
 }
 
-.time{
-  width:8vw;
+.form-item:focus {
+    outline: 0;
 }
 
-.not-time{
-  width:10vw;
+.time {
+    width: 8vw;
 }
 
+.not-time {
+    width: 10vw;
+}
 
-.form-item:active{
-  border:none;
+.form-item[type="submit"] {
+    padding:none;
+    width: 10vw;
+    margin-right: auto;
+}
+
+.form-item[type="submit"]:hover {
+    font-weight: 900;
+    text-shadow: 0 0 1vh white;
 }
