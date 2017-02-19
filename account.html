@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="appendTrips.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 <body>
   <div id = "top-bar">
@@ -43,37 +44,37 @@
       <div class = "trip">
         <span class = "trip-part">USC</span>
         <span class = "trip-part">LAX</span>
-        <span class = "trip-part">2:00am - 3:00pm</span>
+        <span class = "trip-part">2:00pm - 3:00pm</span>
         <span class = "trip-part">1/29/17</span>
         <button class = "trip-part" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Check Matches!</button>
       </div>
       <div class = "trip">
         <span class = "trip-part">LAX</span>
         <span class = "trip-part">USC</span>
-        <span class = "trip-part">2:00am - 3:00pm</span>
+        <span class = "trip-part">2:00pm - 3:00pm</span>
         <span class = "trip-part">2/2/17</span>
         <button class = "trip-part">Check Matches!</button>
       </div>
     </div>
-    <div class = "form-container">
+    <div ng-app="" ng-init="from; to; earliest; latest; date" class = "form-container">
       <form id="tripInfo">
         <span class = "form-item-container" id = "to">
-          <input class = "form-item not-time" value = "Where from?" type="text" name="toLocal" value = ""/>
+          <input ng-model="from" placeholder="Where from?" class = "form-item not-time" type="text" name="toLocal" value = ""/>
         </span>
         <span class = "form-item-container" id = "from">
-          <input class = "form-item not-time" value = "Where to?" type="text" name="fromLocal"/>
+          <input ng-model="to" placeholder="Where to?" class = "form-item not-time" type="text" name="fromLocal"/>
         </span>
         <span class = "form-item-container">
           <span id = "earliest-depart">
-            <input class = "form-item time" value = "Earliest" type="text" name="earlyTime"/>
+            <input ng-model="earliest" placeholder="2:00 pm" class = "form-item time" value = "Earliest" type="text" name="earlyTime"/>
           </span>
           &nbsp;-&nbsp;
           <span id = "lastest-depart">
-            <input class = "form-item time" value = "Latest" type="text" name="lateTime"/>
+            <input ng-model="latest" placeholder="3:00 pm" class = "form-item time" type="text" name="lateTime"/>
           </span>
         </span>
         <span class = "form-item-container" id = "date">
-          <input class = "form-item not-time" value = "mm/dd/yy" type = "text" name = "date" />
+          <input ng-model="date" placeholder="mm/dd/yy" class = "form-item not-time" type = "text" name = "date" />
         </span>
         <span class = "form-item-container" id = "submit">
           <input class = "form-item" type = "submit" value="Add Trip"/>
