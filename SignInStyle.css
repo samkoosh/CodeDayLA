@@ -69,6 +69,10 @@ button:focus {
     outline: 0;
 }
 
+button:hover {
+    text-shadow: 0 0 1vh white;
+}
+
 input {
     color: white;
     font-family: 'Comfortaa', cursive;
@@ -123,6 +127,10 @@ button[class="userId"] {
     width: 20vw;
     border: none;
     border-radius: none;
+}
+
+button[class="userId"]:hover {
+    text-shadow: 0 0 1vh white;
 }
 
 button[class="createUserModal"]{
