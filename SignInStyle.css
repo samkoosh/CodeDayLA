@@ -1,0 +1,62 @@
+#grad {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(189, 32, 49); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(189, 32, 49), rgb(204, 153, 0)); /* Standard syntax */
+}
+#travlr-container{
+  font-size: 9vh;
+  font-family: 'Pacifico', cursive;
+  /*bottom:0;*/
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+#horsepic{
+  height:9vh;
+  padding-bottom:1vh;
+}
+#elements-container{
+  padding-top: 25vh;
+}
+.inp-container{
+  margin: 1vh auto 1vh auto;
+  text-align: center;
+}
+.button-container{
+  margin: 3vh auto 1vh auto;
+  text-align: center;
+}
+button{
+  color:white;
+  font-family: 'Comfortaa', cursive;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 5vh;
+  width: 20vw;
+  border:0;
+  border-radius:1vh;
+}
+input{
+  color:white;
+  font-family: 'Comfortaa', cursive;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 5vh;
+  width: 20vw;
+  border:0;
+  border-radius:1vh;
+}
+input:focus {
+  background-color:rgba(0, 0, 0, 0.65);
+  outline:none;
+}
+
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'PT Sans', sans-serif;
+*/
