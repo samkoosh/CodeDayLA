@@ -40,26 +40,41 @@
         <span class = "trip-part">USC</span>
         <span class = "trip-part">LAX</span>
         <span class = "trip-part">2:00am - 3:00pm</span>
-        <span class = "trip-part">2.2.17</span>
+        <span class = "trip-part">1/29/17</span>
         <button class = "trip-part">Check Matches!</button>
       </div>
       <div class = "trip">
-        <span class = "trip-part">USC</span>
         <span class = "trip-part">LAX</span>
+        <span class = "trip-part">USC</span>
         <span class = "trip-part">2:00am - 3:00pm</span>
-        <span class = "trip-part">2.2.17.32</span>
+        <span class = "trip-part">2/2/17</span>
         <button class = "trip-part">Check Matches!</button>
       </div>
     </div>
-    <div>
+    <div class = "form-container">
       <form id="tripInfo">
-      To: <input type="text" name="toLocal" />
-      From: <input type="text" name="fromLocal" />
-      Earliest Time of Departure: <input type="text" name="earlyTime"/>
-      Latest Time of Departure: <input type="text" name="lateTime"/>
-      Date of Trip: <input type = "text" name = "date" />
-      <input type = "submit" value="Add Trip"/>
-    </form>
+        <span class = "form-item-container" id = "to">
+          <input class = "form-item hvr hvr-grow not-time" type="text" name="toLocal" value = ""/>
+        </span>
+        <span class = "form-item-container" id = "from">
+          <input class = "form-item hvr hvr-grow not-time" type="text" name="fromLocal"/>
+        </span>
+        <span class = "form-item-container">
+          <span id = "earliest-depart">
+            <input class = "form-item hvr hvr-grow time" type="text" name="earlyTime"/>
+          </span>
+          &nbsp;-&nbsp;
+          <span id = "lastest-depart">
+            <input class = "form-item hvr hvr-grow time" type="text" name="lateTime"/>
+          </span>
+        </span>
+        <span class = "form-item-container" id = "date">
+          <input class = "form-item hvr hvr-grow not-time" type = "text" name = "date" />
+        </span>
+        <span class = "form-item-container" id = "submit">
+          <input class = "form-item hvr hvr-grownot-time" type = "submit" value="Add Trip"/>
+        </span>
+      </form>
     </div>
   </div>
 </body>

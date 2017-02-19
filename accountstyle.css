@@ -74,8 +74,7 @@ body {
     font-size: 5vh;
     text-shadow: 0 0 4vh black;
     color: white;
-    padding-top: 5vh;
-    padding-left: 5vw;
+    padding: 5vh 0vw 2vh 5vw;
 }
 
 #trip-icon-container {
@@ -96,10 +95,11 @@ body {
 }
 
 .trip-icon {
-  height:4vh;
+    height: 4vh;
 }
 
 #trips-container {
+    padding: 2vh 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -132,4 +132,45 @@ button[class="trip-part"] {
 
 button[class="trip-part"]:hover {
     color: aqua;
+}
+
+form {
+  display: flex;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 5vh;
+  justify-content: space-around;
+}
+
+.form-item-container {
+  font-family: 'Comfortaa', cursive;
+  color:white;
+  font-size: 3vh;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+.form-item{
+  background-color:rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 1vh;
+  color:white;
+  height: 5vh;
+}
+
+.time{
+  width:8vw;
+}
+
+.not-time{
+  width:10vw;
+}
+
+
+.form-item:active{
+  border:none;
 }
