@@ -82,15 +82,16 @@ body {
     font-size: 5vh;
     text-shadow: 0 0 4vh black;
     color: white;
-    padding: 5vh 0vw 2vh 5vw;
+    padding: 5vh 0vw 5vh 5vw;
 }
 
 #trip-icon-container {
     display: flex;
     align-content: center;
     background-color: rgba(0, 0, 0, 0.1);
-    height: 5vh;
+    height: 6vh;
     justify-content: space-around;
+    margin-bottom: 2vh;
 }
 
 .icon-holder {
@@ -104,6 +105,8 @@ body {
 
 .trip-icon {
     height: 4vh;
+    -webkit-filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
 }
 
 #trips-container {
@@ -120,6 +123,7 @@ body {
     margin: 0 auto;
     text-align: center;
     flex-direction: row;
+    padding:2vh 0;
 }
 
 .trip-part {
@@ -152,6 +156,7 @@ form {
     align-content: center;
     height: 5vh;
     justify-content: space-around;
+    margin-top: 2vh;
 }
 
 .form-item-container {
@@ -164,6 +169,7 @@ form {
     flex-direction: row;
     text-align: center;
     justify-content: center;
+
 }
 
 .form-item {
@@ -177,6 +183,8 @@ form {
 
 .form-item:focus {
     outline: 0;
+    font-weight: 900;
+    box-shadow: 0 0 1vh white;
 }
 
 .time {
@@ -196,4 +204,5 @@ form {
 .form-item[type="submit"]:hover {
     font-weight: 900;
     text-shadow: 0 0 1vh white;
+    box-shadow: 0 0 1vh white;
 }
