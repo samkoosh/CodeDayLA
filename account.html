@@ -7,37 +7,48 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link href="accountstyle.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div id = "top-bar">
-    <span id = "logo">Travlr</span>
-    <span class = "account-meta">
-      <span class = "username-container">
-        <p id = "username">Max C.L. Nikias</p>
-      </span>
-      <span class = "profile-pic-container">
-        <img id = "profile-pic" src="assets/placeholder-prof-pic.png" alt="profile-picture">
-      </span>
+    <span id = "logo-text" class = "hvr hvr-grow">
+      Travlr
     </span>
+    <img id = "logo-pic" src="assets/traveler.png" alt="horsey">
+    <div id = "account-meta">
+      <span class = "username-container">
+        Max C.L. Nikias
+      </span>
+      <img id = "profile-pic" src="assets/placeholder-prof-pic.png" alt="profile-picture">
+    </div>
   </div>
   <div id = "under-bar">
     <div id = "cat-title">Your Trips</div>
     <div id = "trip-icon-container">
-      <img class = "trip-icon" src = "assets/from.png" alt="from">
-      <img class = "trip-icon" src = "assets/to.png" alt="to">
-      <img class = "trip-icon" src = "assets/clock.png" alt="clock">
-      <img class = "trip-icon" src = "assets/calendar.png" alt="calendar">
+      <div class = "icon-holder" ><img class = "trip-icon" src = "assets/from.png" alt="from"></div>
+      <div class = "icon-holder" ><img class = "trip-icon" src = "assets/to.png" alt="to"></div>
+      <div class = "icon-holder" ><img class = "trip-icon" src = "assets/clock.png" alt="clock"></div>
+      <div class = "icon-holder" ><img class = "trip-icon" src = "assets/calendar.png" alt="calendar"></div>
+      <div class = "icon-holder" ><img class = "trip-icon" src="assets/blank.png" alt="blank"></div>
     </div>
     <div id = "trips-container" name = "trips-container">
-      <!-- <div class = "trip">
+      <div class = "trip">
         <span class = "trip-part">USC</span>
         <span class = "trip-part">LAX</span>
         <span class = "trip-part">2:00am - 3:00pm</span>
         <span class = "trip-part">2.2.17</span>
-      </div> -->
+        <button class = "trip-part">Check Matches!</button>
+      </div>
+      <div class = "trip">
+        <span class = "trip-part">USC</span>
+        <span class = "trip-part">LAX</span>
+        <span class = "trip-part">2:00am - 3:00pm</span>
+        <span class = "trip-part">2.2.17.32</span>
+        <button class = "trip-part">Check Matches!</button>
+      </div>
     </div>
   </div>
 </body>
