@@ -23,16 +23,17 @@
         <img id = "logo-pic" src="assets/traveler.png" alt="horsey">
       </span>
     </div>
-    <div ng-app="" ng-init="username='username'; password= 'password'" class = "inp-container">
+    <div ng-app="" ng-init="email; password" class = "inp-container">
       <div class = "inp-container">
-        <input id = "usr" ng-model="username">
+        <input id = "usr" placeholder="email" ng-model="email">
       </div>
       <div class = "inp-container">
-        <input id = "pwd" ng-model="password">
+        <input type="password" id = "pwd" placeholder="password" ng-model="password">
       </div>
+      <a href="account.html">
       <div>
         <button type="submit" class="inp-container">Sign In</button>
-      </div>
+      </div></a>
     </div>
     <div class="inp-container">
     <button type="button" class="userId" data-toggle="modal" data-target="#myModal">
@@ -46,21 +47,25 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Create new account</h4>
+            <h4 class="modal-title">Create New Account</h4>
           </div>
           <div class="modal-body">
             <form id=newUser>
               <div class = "inp-container">
-                <input type="text" class="new-cnt" id="usr"/>
+                <input type="text" placeholder="email" class="new-cnt" id="usr"/>
               </div>
               <div class = "inp-container">
-                <input type="text" class="new-cnt" id="pwd"/>
+                <input type="password" placeholder="password" class="new-cnt" id="pwd"/>
+              </div>
+              <div class = "inp-container">
+                <input type="password" placeholder="confirm password" class="new-cnt" id="pwdC" />
               </div>
               <!-- <p>Some text in the modal.</p> -->
           </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="createUserModal">Create New User!</button>
+            <button type="button" class= "createUserModal" data-dismiss="modal">Close</button>
           </div>
         </div>
         <!-- Modal Content end -->

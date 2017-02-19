@@ -86,8 +86,18 @@ input:focus {
     outline: none;
 }
 
+input:focus[class="new-cnt"]{
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3vh;
+}
 
 /* Modal Content/Box */
+.modal-title {
+  font-family: 'Comfortaa', cursive;
+  color:black;
+  font-weight: 900;
+  font-size: 2vh;
+}
 
 .modal-content {
     background-color: #fefefe;
@@ -96,7 +106,12 @@ input:focus {
     padding: 0px;
     border: 1px solid #888;
     width: 80%;
+    font-family: 'Comfortaa', cursive;
     /* Could be more or less, depending on screen size */
+}
+
+.model-header{
+    height:200px;
 }
 
 button[class="userId"] {
@@ -110,11 +125,25 @@ button[class="userId"] {
     border-radius: none;
 }
 
+button[class="createUserModal"]{
+    color:black;
+    background-color:white;
+    border-color: black;
+    border-width:thick;
+    width: 10vw;
+    text-align: center;
+}
+
 .new-cnt {
     margin: 1vh auto 1vh auto;
     text-align: left;
     left: 50%;
     right: 50%;
+    font-family: 'Comfortaa', cursive;
+    color:black;
+    background-color:white;
+    border-radius: 5px;
+    border-color: grey;
 }
 
 .newUser {
@@ -139,6 +168,7 @@ button[class="userId"] {
     cursor: pointer;
     outline: 0;
 }
+
 
 
 /*
