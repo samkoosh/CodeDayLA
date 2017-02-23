@@ -46,6 +46,7 @@ body {
 .inp-container {
     margin: 1vh auto 1vh auto;
     text-align: center;
+    
 }
 
 .button-container {
@@ -140,6 +141,7 @@ button[class="createUserModal"]{
     border-width:thick;
     width: 10vw;
     text-align: center;
+    margin: 1vh auto 1vh auto;
 }
 
 .new-cnt {

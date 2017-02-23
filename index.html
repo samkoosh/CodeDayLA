@@ -23,6 +23,7 @@
         <img id = "logo-pic" src="assets/traveler.png" alt="horsey">
       </span>
     </div>
+    <!--These are the email and password input values -->
     <div ng-app="" ng-init="email; password" class = "inp-container">
       <div class = "inp-container">
         <input id = "usr" placeholder="email" ng-model="email">
@@ -30,15 +31,18 @@
       <div class = "inp-container">
         <input type="password" id = "pwd" placeholder="password" ng-model="password">
       </div>
-      <a href="account.html">
+
       <div>
+        <a href="account.html">
         <button type="submit" class="inp-container">Sign In</button>
-      </div></a>
+        </a>
+      </div>
     </div>
+    <!--Here, we create a slot for new users -->
     <div class="inp-container">
-    <button type="button" class="userId" data-toggle="modal" data-target="#myModal">
-      Not a member? Sign up now!
-    </button>
+      <button type="button" class="userId" data-toggle="modal" data-target="#myModal">
+        Not a member? Sign up now!
+      </button>
     </div>
     <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
